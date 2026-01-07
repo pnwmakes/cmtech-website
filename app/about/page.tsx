@@ -21,6 +21,9 @@ export default function AboutPage() {
             />
           </Link>
           <div className="flex items-center gap-6">
+            <Link href="/" className="text-gray-700 hover:text-blue-700 transition-colors font-medium">
+              Home
+            </Link>
             <Link href="/about" className="text-blue-700 font-semibold hover:text-blue-800 transition-colors">
               About
             </Link>
