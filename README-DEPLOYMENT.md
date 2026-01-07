@@ -5,26 +5,31 @@
 ### Method 1: Using Vercel CLI (Fastest)
 
 1. Install Vercel CLI globally (if not already installed):
+
 ```bash
 npm i -g vercel
 ```
 
 2. Navigate to the project directory:
+
 ```bash
 cd /Users/james/Desktop/CMTech/website/cmtech-website
 ```
 
 3. Login to Vercel:
+
 ```bash
 vercel login
 ```
 
 4. Deploy:
+
 ```bash
 vercel
 ```
 
 5. For production deployment:
+
 ```bash
 vercel --prod
 ```
@@ -41,12 +46,14 @@ vercel --prod
 
 1. Create a GitHub repository
 2. Push the `cmtech-website` folder to GitHub:
+
 ```bash
 cd /Users/james/Desktop/CMTech/website/cmtech-website
 git remote add origin https://github.com/YOUR-USERNAME/cmtech-website.git
 git branch -M main
 git push -u origin main
 ```
+
 3. Go to [vercel.com](https://vercel.com) and import the GitHub repository
 4. Every push to main will auto-deploy
 
@@ -55,17 +62,19 @@ git push -u origin main
 ## 🎨 What's Included in This Demo
 
 ### Features:
-- ✅ **CMTech Logo** - Your official logo in the header
-- ✅ **Animated Counter** - Watch the "210,000+ Learners Served" count up (the cheeky part!)
-- ✅ **Impact Stats** - 3 beautiful stat cards with real numbers
-- ✅ **Gradient Design** - Modern blue/amber color scheme
-- ✅ **Responsive Layout** - Looks great on mobile, tablet, desktop
-- ✅ **Interactive Buttons** - Hover effects and animations
-- ✅ **Easter Egg Message** - Special note for the team at the bottom
-- ✅ **Sticky Header** - Navigation follows as you scroll
-- ✅ **Accessibility** - Focus states, semantic HTML
+
+-   ✅ **CMTech Logo** - Your official logo in the header
+-   ✅ **Animated Counter** - Watch the "210,000+ Learners Served" count up (the cheeky part!)
+-   ✅ **Impact Stats** - 3 beautiful stat cards with real numbers
+-   ✅ **Gradient Design** - Modern blue/amber color scheme
+-   ✅ **Responsive Layout** - Looks great on mobile, tablet, desktop
+-   ✅ **Interactive Buttons** - Hover effects and animations
+-   ✅ **Easter Egg Message** - Special note for the team at the bottom
+-   ✅ **Sticky Header** - Navigation follows as you scroll
+-   ✅ **Accessibility** - Focus states, semantic HTML
 
 ### The Cheeky Element 🎉
+
 The learner counter that animates from 0 to 210,000+ when the page loads - it's eye-catching and shows off the scale of your impact!
 
 ---
@@ -73,8 +82,9 @@ The learner counter that animates from 0 to 210,000+ when the page loads - it's 
 ## 📱 Local Preview
 
 The site is currently running at:
-- **Local**: http://localhost:3000
-- **Network**: http://192.168.2.229:3000
+
+-   **Local**: http://localhost:3000
+-   **Network**: http://192.168.2.229:3000
 
 Share the network URL with others on your WiFi to show them!
 
@@ -101,6 +111,7 @@ cmtech-website/
 Once deployed, you'll get a URL like: `https://cmtech-website.vercel.app`
 
 Share this with your team to show:
+
 1. The animated learner counter (cheeky element)
 2. Modern, professional design
 3. Mobile responsiveness
@@ -112,20 +123,23 @@ Share this with your team to show:
 ## 💡 Customization Notes
 
 ### Colors (in `app/globals.css`):
-- Primary Blue: `#1e40af` (trust, stability)
-- Accent Orange: `#f59e0b` (hope, energy)
-- Success Green: `#10b981` (growth, opportunity)
+
+-   Primary Blue: `#1e40af` (trust, stability)
+-   Accent Orange: `#f59e0b` (hope, energy)
+-   Success Green: `#10b981` (growth, opportunity)
 
 ### Typography:
-- System fonts for performance and accessibility
-- Large, bold headlines for impact
-- Readable body text (minimum 16px)
+
+-   System fonts for performance and accessibility
+-   Large, bold headlines for impact
+-   Readable body text (minimum 16px)
 
 ### Animations:
-- Counter animation on load
-- Button hover effects with scale
-- Smooth scrolling
-- Glowing donate button
+
+-   Counter animation on load
+-   Button hover effects with scale
+-   Smooth scrolling
+-   Glowing donate button
 
 ---
 
@@ -141,8 +155,9 @@ Share this with your team to show:
 ## 📞 Support
 
 If you need help deploying:
-- Check Vercel docs: https://vercel.com/docs
-- Check Next.js docs: https://nextjs.org/docs
+
+-   Check Vercel docs: https://vercel.com/docs
+-   Check Next.js docs: https://nextjs.org/docs
 
 ---
 

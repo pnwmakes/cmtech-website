@@ -3,16 +3,18 @@
 ## Method 1: Create Repo via GitHub Website (Easiest)
 
 ### Step 1: Create the Repository
+
 1. Go to [github.com](https://github.com) and log in
 2. Click the **"+"** in the top-right → **"New repository"**
 3. Fill in:
-   - **Repository name**: `cmtech-website`
-   - **Description**: "Modern website for The Cade Moore Polytechnic Institute - Real Skills for the Real World"
-   - **Visibility**: Choose Public or Private
-   - **DO NOT** initialize with README, .gitignore, or license (we already have these)
+    - **Repository name**: `cmtech-website`
+    - **Description**: "Modern website for The Cade Moore Polytechnic Institute - Real Skills for the Real World"
+    - **Visibility**: Choose Public or Private
+    - **DO NOT** initialize with README, .gitignore, or license (we already have these)
 4. Click **"Create repository"**
 
 ### Step 2: Push Your Code
+
 GitHub will show you commands. Use these:
 
 ```bash
@@ -65,6 +67,7 @@ git push -u origin main
 ## 🔗 Next Steps After Pushing
 
 ### Connect to Vercel (Auto-Deploy)
+
 1. Go to [vercel.com](https://vercel.com)
 2. Click "Add New" → "Project"
 3. Select "Import Git Repository"
@@ -74,7 +77,9 @@ git push -u origin main
 Now every time you push to GitHub, Vercel will automatically deploy! 🎉
 
 ### Enable GitHub Pages (Alternative)
+
 If you want a simple GitHub-hosted version:
+
 1. Go to repo Settings → Pages
 2. Source: Deploy from branch → `main` → `/` (root)
 3. Save
@@ -121,10 +126,13 @@ git checkout main
 ## 🆘 Troubleshooting
 
 ### "Repository not found"
+
 Make sure you replaced `YOUR-USERNAME` with your actual GitHub username.
 
 ### "Permission denied"
+
 You may need to authenticate:
+
 ```bash
 git remote set-url origin https://YOUR-USERNAME@github.com/YOUR-USERNAME/cmtech-website.git
 ```
@@ -132,7 +140,9 @@ git remote set-url origin https://YOUR-USERNAME@github.com/YOUR-USERNAME/cmtech-
 Or set up SSH keys (more secure for frequent use).
 
 ### "Branch 'main' already exists"
+
 Just push directly:
+
 ```bash
 git push -u origin main
 ```
