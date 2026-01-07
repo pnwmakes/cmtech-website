@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -34,7 +35,7 @@ export default function Home() {
       {/* Header */}
       <header className="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <Image
               src="/logo.png"
               alt="CMTech Logo"
@@ -43,10 +44,21 @@ export default function Home() {
               priority
               className="h-auto"
             />
+          </Link>
+          <div className="flex items-center gap-6">
+            <Link href="/about" className="text-gray-700 hover:text-blue-700 transition-colors font-medium">
+              About
+            </Link>
+            <Link href="/courses" className="text-gray-700 hover:text-blue-700 transition-colors font-medium">
+              Courses
+            </Link>
+            <Link href="/give" className="text-gray-700 hover:text-blue-700 transition-colors font-medium">
+              Get Involved
+            </Link>
+            <Link href="/give/donate" className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2.5 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 animate-pulse-glow">
+              Donate Now
+            </Link>
           </div>
-          <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2.5 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 animate-pulse-glow">
-            Donate Now
-          </button>
         </nav>
       </header>
 
@@ -115,18 +127,18 @@ export default function Home() {
 
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-110 transition-all duration-300 flex items-center gap-2">
+            <Link href="/courses" className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-110 transition-all duration-300 flex items-center gap-2">
               <span>🎓</span>
               Explore Courses
-            </button>
-            <button className="bg-white text-blue-700 border-2 border-blue-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 hover:shadow-lg hover:scale-110 transition-all duration-300 flex items-center gap-2">
+            </Link>
+            <Link href="/about" className="bg-white text-blue-700 border-2 border-blue-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 hover:shadow-lg hover:scale-110 transition-all duration-300 flex items-center gap-2">
               <span>🤝</span>
               Become a Partner
-            </button>
-            <button className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-110 transition-all duration-300 flex items-center gap-2">
+            </Link>
+            <Link href="/give/donate" className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-110 transition-all duration-300 flex items-center gap-2">
               <span>💝</span>
               Support Our Mission
-            </button>
+            </Link>
           </div>
 
           {/* Cheeky Easter Egg Message */}
