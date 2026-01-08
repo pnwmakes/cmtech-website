@@ -2,6 +2,27 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Get Involved - Partner, Volunteer, or Donate | CMTech',
+    description:
+        'Support prison learning through donations, corporate partnerships, volunteering, or sponsoring a Charter. Multiple ways to make an impact with CMTech.',
+    openGraph: {
+        title: 'Partner with CMTech - Support Prison Education',
+        description:
+            'Corporate partnerships, volunteer opportunities, and giving options to expand career education for incarcerated learners.',
+        url: 'https://cmtech-website.netlify.app/give',
+        images: ['/logo.png'],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Get Involved with CMTech',
+        description:
+            'Partner, volunteer, or donate to expand career education for 210,000+ incarcerated learners.',
+        images: ['/logo.png'],
+    },
+};
 
 export default function GetInvolvedPage() {
     const waysToHelp = [

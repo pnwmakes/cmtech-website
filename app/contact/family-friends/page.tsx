@@ -110,10 +110,10 @@ export default function FamilyFriendsContactPage() {
                                     Check if CMTech is Available
                                 </h3>
                                 <p className='text-gray-700'>
-                                    CMTech courses are available on Edovo tablets
-                                    in 1,300+ facilities nationwide. Ask your
-                                    loved one to check their tablet for CMTech
-                                    courses.
+                                    CMTech courses are available on Edovo
+                                    tablets in 1,300+ facilities nationwide. Ask
+                                    your loved one to check their tablet for
+                                    CMTech courses.
                                 </p>
                             </div>
 
@@ -203,7 +203,9 @@ export default function FamilyFriendsContactPage() {
                                 >
                                     <option value=''>Select...</option>
                                     <option value='parent'>Parent</option>
-                                    <option value='spouse'>Spouse/Partner</option>
+                                    <option value='spouse'>
+                                        Spouse/Partner
+                                    </option>
                                     <option value='sibling'>Sibling</option>
                                     <option value='child'>Child</option>
                                     <option value='friend'>Friend</option>

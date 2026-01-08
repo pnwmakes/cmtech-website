@@ -2,6 +2,27 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Donate Now - Fund a Learner's Future | CMTech",
+    description:
+        "$50 covers one learner's full course enrollment. Your gift directly funds skilled trades education for incarcerated learners. No overhead bloat—just real courses leading to real careers.",
+    openGraph: {
+        title: 'Support CMTech - $50 Funds One Learner',
+        description:
+            'Make an impact today. Your donation provides free career education to incarcerated learners nationwide.',
+        url: 'https://cmtech-website.netlify.app/give/donate',
+        images: ['/logo.png'],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Support CMTech - $50 Funds One Learner',
+        description:
+            'Make an impact today. Your donation provides free career education to incarcerated learners.',
+        images: ['/logo.png'],
+    },
+};
 
 export default function DonatePage() {
     const giftLadder = [

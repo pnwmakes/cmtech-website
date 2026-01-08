@@ -2,6 +2,27 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: '50+ Free Courses - Career Training & Leadership | CMTech',
+    description:
+        'From HVAC to AI, carpentry to financial planning. CMTech offers 50+ free skilled trades courses for incarcerated learners. 100% tuition-free career education.',
+    openGraph: {
+        title: 'CMTech Courses - Free Career Training Behind Bars',
+        description:
+            'HVAC, Plumbing, Electrical, AI, and more. 50+ free courses available on Edovo tablets in 1,300+ facilities nationwide.',
+        url: 'https://cmtech-website.netlify.app/courses',
+        images: ['/logo.png'],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'CMTech: 50+ Free Career Training Courses',
+        description:
+            'From HVAC to AI. Free skilled trades education for incarcerated learners in 1,300+ facilities.',
+        images: ['/logo.png'],
+    },
+};
 
 export default function CoursesPage() {
     const courses = [
