@@ -172,7 +172,8 @@ export default function GetInvolvedPage() {
                     <div className='bg-white rounded-2xl p-6 shadow-lg border border-gray-200 max-w-3xl mx-auto'>
                         <p className='text-gray-700 text-lg leading-relaxed'>
                             Every contribution to CMTech goes directly toward
-                            expanding career education for incarcerated learners.{' '}
+                            expanding career education for incarcerated
+                            learners.{' '}
                             <strong className='text-blue-700'>
                                 We're a lean operation that prioritizes
                                 scalability
@@ -201,7 +202,9 @@ export default function GetInvolvedPage() {
                                 <Link
                                     key={way.title}
                                     href={way.href}
-                                    className={`bg-gradient-to-br ${getColorClasses(way.color)} rounded-xl p-6 border-2 transition-all duration-300 hover:shadow-xl group`}
+                                    className={`bg-gradient-to-br ${getColorClasses(
+                                        way.color
+                                    )} rounded-xl p-6 border-2 transition-all duration-300 hover:shadow-xl group`}
                                 >
                                     <div className='text-5xl mb-4'>
                                         {way.icon}
@@ -234,8 +237,8 @@ export default function GetInvolvedPage() {
                                 Partner with CMTech to meet annual CSR goals
                                 while connecting with an audience of{' '}
                                 <strong className='text-blue-700'>
-                                    210,000+ future apprentices, skilled workers,
-                                    and entrepreneurs
+                                    210,000+ future apprentices, skilled
+                                    workers, and entrepreneurs
                                 </strong>
                                 .
                             </p>
@@ -300,8 +303,8 @@ export default function GetInvolvedPage() {
                                     📝 Curriculum Review
                                 </h3>
                                 <p className='text-gray-700 mb-2'>
-                                    Trade professionals review course content for
-                                    accuracy
+                                    Trade professionals review course content
+                                    for accuracy
                                 </p>
                                 <p className='text-sm text-gray-600'>
                                     Time commitment: 5-10 hours
