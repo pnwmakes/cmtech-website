@@ -94,15 +94,11 @@ export default function CoursesPage() {
             {/* Header */}
             <header className='border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50'>
                 <nav className='container mx-auto px-4 py-4 flex items-center justify-between'>
-                    <Link href='/' className='flex items-center gap-3'>
-                        <Image
-                            src='/logo.png'
-                            alt='CMTech Logo'
-                            width={120}
-                            height={54}
-                            priority
-                            className='h-auto'
-                        />
+                    <Link href='/' className='flex items-center gap-4'>
+                        <div className='flex flex-col'>
+                            <span className='text-3xl font-bold text-gray-900'>CMTech</span>
+                            <span className='text-sm text-gray-600 leading-tight'>The Cade Moore Polytechnic Institute</span>
+                        </div>
                     </Link>
                     <div className='flex items-center gap-6'>
                         <Link
@@ -149,10 +145,18 @@ export default function CoursesPage() {
                         Career-Building Education + Leadership Skills
                     </h1>
                     <p className='text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed'>
-                        From HVAC to AI, carpentry to financial planning. CMTech is learning you can take to work. <strong className='text-blue-700'>100% tuition-free, thanks to support from people like you.</strong>
+                        From HVAC to AI, carpentry to financial planning. CMTech
+                        is learning you can take to work.{' '}
+                        <strong className='text-blue-700'>
+                            100% tuition-free, thanks to support from people
+                            like you.
+                        </strong>
                     </p>
                     <div className='mb-8'>
-                        <Link href='/give/donate' className='inline-block bg-gradient-to-r from-amber-500 to-amber-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300'>
+                        <Link
+                            href='/give/donate'
+                            className='inline-block bg-gradient-to-r from-amber-500 to-amber-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300'
+                        >
                             Support Free Education →
                         </Link>
                     </div>
@@ -460,7 +464,9 @@ export default function CoursesPage() {
                         Ready to Bring CMTech to Your Facility?
                     </h2>
                     <p className='text-xl mb-8 max-w-2xl mx-auto opacity-90'>
-                        Partner with us to offer free, career-building education to learners in your facility. Click an option below for more:
+                        Partner with us to offer free, career-building education
+                        to learners in your facility. Click an option below for
+                        more:
                     </p>
                     <div className='flex flex-col sm:flex-row gap-4 justify-center'>
                         <Link

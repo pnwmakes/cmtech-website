@@ -10,15 +10,11 @@ export default function AboutPage() {
             {/* Header */}
             <header className='border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50'>
                 <nav className='container mx-auto px-4 py-4 flex items-center justify-between'>
-                    <Link href='/' className='flex items-center gap-3'>
-                        <Image
-                            src='/logo.png'
-                            alt='CMTech Logo'
-                            width={120}
-                            height={54}
-                            priority
-                            className='h-auto'
-                        />
+                    <Link href='/' className='flex items-center gap-4'>
+                        <div className='flex flex-col'>
+                            <span className='text-3xl font-bold text-gray-900'>CMTech</span>
+                            <span className='text-sm text-gray-600 leading-tight'>The Cade Moore Polytechnic Institute</span>
+                        </div>
                     </Link>
                     <div className='flex items-center gap-6'>
                         <Link

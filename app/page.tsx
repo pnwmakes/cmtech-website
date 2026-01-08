@@ -35,15 +35,11 @@ export default function Home() {
             {/* Header */}
             <header className='border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50'>
                 <nav className='container mx-auto px-4 py-4 flex items-center justify-between'>
-                    <Link href='/' className='flex items-center gap-3'>
-                        <Image
-                            src='/logo.png'
-                            alt='CMTech Logo'
-                            width={140}
-                            height={63}
-                            priority
-                            className='h-auto'
-                        />
+                    <Link href='/' className='flex items-center gap-4'>
+                        <div className='flex flex-col'>
+                            <span className='text-3xl font-bold text-gray-900'>CMTech</span>
+                            <span className='text-sm text-gray-600 leading-tight'>The Cade Moore Polytechnic Institute</span>
+                        </div>
                     </Link>
                     <div className='flex items-center gap-6'>
                         <Link
@@ -93,7 +89,9 @@ export default function Home() {
                     <h1 className='text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 bg-clip-text text-transparent leading-tight'>
                         Real Skills. Real Careers.
                         <br />
-                        <span className='text-amber-500'>From Inside and Out.</span>
+                        <span className='text-amber-500'>
+                            From Inside and Out.
+                        </span>
                     </h1>
 
                     {/* Subheadline */}
@@ -151,22 +149,40 @@ export default function Home() {
                                     CMTech Charter Network
                                 </h2>
                                 <p className='text-gray-700 text-lg leading-relaxed'>
-                                    Our peer-led charter program empowers incarcerated leaders to facilitate learning circles inside facilities. Charter facilitators guide study groups through our curriculum, creating accountability, community, and pathways to leadership development.
+                                    Our peer-led charter program empowers
+                                    incarcerated leaders to facilitate learning
+                                    circles inside facilities. Charter
+                                    facilitators guide study groups through our
+                                    curriculum, creating accountability,
+                                    community, and pathways to leadership
+                                    development.
                                 </p>
                             </div>
                         </div>
                         <div className='grid md:grid-cols-3 gap-4 mt-6'>
                             <div className='bg-white/70 rounded-lg p-4'>
-                                <div className='text-2xl font-bold text-green-600 mb-1'>Active Charters</div>
-                                <p className='text-sm text-gray-600'>Peer-led learning circles nationwide</p>
+                                <div className='text-2xl font-bold text-green-600 mb-1'>
+                                    Active Charters
+                                </div>
+                                <p className='text-sm text-gray-600'>
+                                    Peer-led learning circles nationwide
+                                </p>
                             </div>
                             <div className='bg-white/70 rounded-lg p-4'>
-                                <div className='text-2xl font-bold text-green-600 mb-1'>100% Peer-Led</div>
-                                <p className='text-sm text-gray-600'>Facilitated by incarcerated leaders</p>
+                                <div className='text-2xl font-bold text-green-600 mb-1'>
+                                    100% Peer-Led
+                                </div>
+                                <p className='text-sm text-gray-600'>
+                                    Facilitated by incarcerated leaders
+                                </p>
                             </div>
                             <div className='bg-white/70 rounded-lg p-4'>
-                                <div className='text-2xl font-bold text-green-600 mb-1'>Community Impact</div>
-                                <p className='text-sm text-gray-600'>Building skills and solidarity</p>
+                                <div className='text-2xl font-bold text-green-600 mb-1'>
+                                    Community Impact
+                                </div>
+                                <p className='text-sm text-gray-600'>
+                                    Building skills and solidarity
+                                </p>
                             </div>
                         </div>
                     </div>
