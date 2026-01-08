@@ -39,8 +39,8 @@ export default function Home() {
                         <Image
                             src='/logo.png'
                             alt='CMTech Logo'
-                            width={120}
-                            height={54}
+                            width={140}
+                            height={63}
                             priority
                             className='h-auto'
                         />
@@ -93,7 +93,7 @@ export default function Home() {
                     <h1 className='text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 bg-clip-text text-transparent leading-tight'>
                         Real Skills. Real Careers.
                         <br />
-                        <span className='text-amber-500'>From the Inside.</span>
+                        <span className='text-amber-500'>From Inside and Out.</span>
                     </h1>
 
                     {/* Subheadline */}
@@ -138,6 +138,35 @@ export default function Home() {
                                 <div className='text-sm font-semibold text-amber-800 uppercase tracking-wide'>
                                     �� Justice-Impacted Leadership
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Charter Program Highlight */}
+                    <div className='mb-16 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 border-2 border-green-200 max-w-4xl mx-auto text-left'>
+                        <div className='flex items-start gap-4 mb-4'>
+                            <div className='text-5xl'>🤝</div>
+                            <div>
+                                <h2 className='text-2xl md:text-3xl font-bold text-gray-900 mb-3'>
+                                    CMTech Charter Network
+                                </h2>
+                                <p className='text-gray-700 text-lg leading-relaxed'>
+                                    Our peer-led charter program empowers incarcerated leaders to facilitate learning circles inside facilities. Charter facilitators guide study groups through our curriculum, creating accountability, community, and pathways to leadership development.
+                                </p>
+                            </div>
+                        </div>
+                        <div className='grid md:grid-cols-3 gap-4 mt-6'>
+                            <div className='bg-white/70 rounded-lg p-4'>
+                                <div className='text-2xl font-bold text-green-600 mb-1'>Active Charters</div>
+                                <p className='text-sm text-gray-600'>Peer-led learning circles nationwide</p>
+                            </div>
+                            <div className='bg-white/70 rounded-lg p-4'>
+                                <div className='text-2xl font-bold text-green-600 mb-1'>100% Peer-Led</div>
+                                <p className='text-sm text-gray-600'>Facilitated by incarcerated leaders</p>
+                            </div>
+                            <div className='bg-white/70 rounded-lg p-4'>
+                                <div className='text-2xl font-bold text-green-600 mb-1'>Community Impact</div>
+                                <p className='text-sm text-gray-600'>Building skills and solidarity</p>
                             </div>
                         </div>
                     </div>
