@@ -104,8 +104,8 @@ export default function DonatePage() {
 
                     <div className='bg-white rounded-2xl p-6 shadow-lg border border-gray-200 max-w-3xl mx-auto'>
                         <p className='text-gray-700 text-lg leading-relaxed'>
-                            Your gift directly funds skilled trades education for
-                            incarcerated learners.{' '}
+                            Your gift directly funds skilled trades education
+                            for incarcerated learners.{' '}
                             <strong className='text-gray-900'>
                                 No overhead bloat or executive salaries.
                             </strong>{' '}
@@ -317,8 +317,8 @@ export default function DonatePage() {
                                     Volunteer Your Skills
                                 </h3>
                                 <p className='text-gray-700'>
-                                    Contribute your time and expertise to
-                                    expand prison learning
+                                    Contribute your time and expertise to expand
+                                    prison learning
                                 </p>
                             </Link>
                         </div>
