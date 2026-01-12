@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import Navigation from '../../components/Navigation';
 
 export default function PrisonStaffContactPage() {
     const [formData, setFormData] = useState({
@@ -34,53 +35,7 @@ export default function PrisonStaffContactPage() {
 
     return (
         <div className='min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50'>
-            {/* Header */}
-            <header className='border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50'>
-                <nav className='container mx-auto px-4 py-4 flex items-center justify-between'>
-                    <Link href='/' className='flex items-center gap-4'>
-                        <div className='flex flex-col'>
-                            <span className='text-3xl font-bold text-gray-900'>
-                                CMTech
-                            </span>
-                            <span className='text-sm text-gray-600 leading-tight'>
-                                The Cade Moore Polytechnic Institute
-                            </span>
-                        </div>
-                    </Link>
-                    <div className='flex items-center gap-6'>
-                        <Link
-                            href='/'
-                            className='text-gray-700 hover:text-blue-700 transition-colors font-medium'
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            href='/about'
-                            className='text-gray-700 hover:text-blue-700 transition-colors font-medium'
-                        >
-                            About
-                        </Link>
-                        <Link
-                            href='/courses'
-                            className='text-gray-700 hover:text-blue-700 transition-colors font-medium'
-                        >
-                            Courses
-                        </Link>
-                        <Link
-                            href='/give'
-                            className='text-gray-700 hover:text-blue-700 transition-colors font-medium'
-                        >
-                            Get Involved
-                        </Link>
-                        <Link
-                            href='/give/donate'
-                            className='bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2.5 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 animate-pulse-glow'
-                        >
-                            Donate Now
-                        </Link>
-                    </div>
-                </nav>
-            </header>
+            <Navigation />
 
             {/* Hero Section */}
             <section className='container mx-auto px-4 py-16'>
