@@ -60,8 +60,7 @@ export default function FamilyFriendsContactPage() {
                         </h2>
                         <div className='space-y-6'>
                             <div>
-                                <h3 className='text-lg font-bold text-gray-900 mb-2 flex items-center gap-2'>
-                                    <span className='text-2xl'>📱</span>
+                                <h3 className='text-lg font-bold text-gray-900 mb-2'>
                                     Check if CMTech is Available
                                 </h3>
                                 <p className='text-gray-700'>
@@ -73,8 +72,7 @@ export default function FamilyFriendsContactPage() {
                             </div>
 
                             <div>
-                                <h3 className='text-lg font-bold text-gray-900 mb-2 flex items-center gap-2'>
-                                    <span className='text-2xl'>📞</span>
+                                <h3 className='text-lg font-bold text-gray-900 mb-2'>
                                     Contact the Facility
                                 </h3>
                                 <p className='text-gray-700'>
@@ -86,8 +84,7 @@ export default function FamilyFriendsContactPage() {
                             </div>
 
                             <div>
-                                <h3 className='text-lg font-bold text-gray-900 mb-2 flex items-center gap-2'>
-                                    <span className='text-2xl'>✉️</span>
+                                <h3 className='text-lg font-bold text-gray-900 mb-2'>
                                     We Can Help You Connect
                                 </h3>
                                 <p className='text-gray-700'>
@@ -99,8 +96,7 @@ export default function FamilyFriendsContactPage() {
                             </div>
 
                             <div className='bg-blue-50 rounded-lg p-4 border border-blue-200'>
-                                <h3 className='text-lg font-bold text-gray-900 mb-2 flex items-center gap-2'>
-                                    <span className='text-2xl'>💝</span>
+                                <h3 className='text-lg font-bold text-gray-900 mb-2'>
                                     Support CMTech
                                 </h3>
                                 <p className='text-gray-700 mb-3'>
@@ -347,7 +343,7 @@ export default function FamilyFriendsContactPage() {
                         Dallas, TX 75381
                     </p>
                     <p className='text-xs text-gray-400 mt-4'>
-                        © 2026 CMTech. Real Skills for the Real World. 🎯
+                        © 2026 CMTech. Real Skills for the Real World.
                     </p>
                 </div>
             </footer>

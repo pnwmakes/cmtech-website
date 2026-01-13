@@ -27,7 +27,7 @@ export default function GetInvolvedPage() {
     const waysToHelp = [
         {
             title: 'Donate',
-            icon: '💝',
+            icon: '',
             description:
                 'Give once or monthly to fund learner enrollment and course development',
             cta: 'Give Now',
@@ -36,7 +36,7 @@ export default function GetInvolvedPage() {
         },
         {
             title: 'Wishlist',
-            icon: '📦',
+            icon: '',
             description:
                 'Send tools, books, and supplies directly to support learners',
             cta: 'Shop Wishlist',
@@ -45,7 +45,7 @@ export default function GetInvolvedPage() {
         },
         {
             title: 'Sponsor a Charter',
-            icon: '🤝',
+            icon: '',
             description:
                 'Fund peer-led learning circles at a facility for a full year',
             cta: 'Become a Sponsor',
@@ -54,7 +54,7 @@ export default function GetInvolvedPage() {
         },
         {
             title: 'Volunteer',
-            icon: '⏰',
+            icon: '',
             description:
                 'Contribute your time and skills to curriculum review, research, and more',
             cta: 'Apply to Volunteer',
@@ -63,7 +63,7 @@ export default function GetInvolvedPage() {
         },
         {
             title: 'Start a Fundraiser',
-            icon: '📣',
+            icon: '',
             description:
                 'Rally your network and host a fundraising campaign for CMTech',
             cta: 'Get Started',
@@ -72,7 +72,7 @@ export default function GetInvolvedPage() {
         },
         {
             title: 'Corporate Giving',
-            icon: '🏢',
+            icon: '',
             description:
                 'Partner with CMTech to meet CSR goals and connect with future skilled workers',
             cta: 'Partner With Us',
@@ -127,19 +127,20 @@ export default function GetInvolvedPage() {
     };
 
     return (
-        <div className='min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50'>
+        <div className='min-h-screen bg-white'>
             <Navigation currentPage='give' />
 
             {/* Hero Section */}
-            <section className='container mx-auto px-4 py-16 md:py-24'>
+            <section className='relative overflow-hidden bg-gradient-to-br from-slate-700 via-blue-700 to-slate-600 text-white py-20 md:py-32'>
+                <div className='container mx-auto px-4'>
                 <div className='max-w-4xl mx-auto text-center'>
-                    <div className='inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-6'>
+                    <div className='inline-block bg-blue-400/20 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6'>
                         Join the Movement
                     </div>
-                    <h1 className='text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 bg-clip-text text-transparent leading-tight'>
+                    <h1 className='text-5xl md:text-6xl font-bold mb-6 leading-tight'>
                         Your Support Builds Futures
                     </h1>
-                    <p className='text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed'>
+                    <p className='text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed'>
                         Fund real skills. Create real opportunities.
                     </p>
 
@@ -157,10 +158,11 @@ export default function GetInvolvedPage() {
                         </p>
                     </div>
                 </div>
+                </div>
             </section>
 
             {/* Ways to Give */}
-            <section className='bg-white py-16'>
+            <section className='bg-gray-50 py-16'>
                 <div className='container mx-auto px-4'>
                     <div className='max-w-6xl mx-auto'>
                         <h2 className='text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4'>
@@ -176,13 +178,8 @@ export default function GetInvolvedPage() {
                                 <Link
                                     key={way.title}
                                     href={way.href}
-                                    className={`bg-gradient-to-br ${getColorClasses(
-                                        way.color
-                                    )} rounded-xl p-6 border-2 transition-all duration-300 hover:shadow-xl group`}
+                                    className='bg-white rounded-xl p-6 border border-gray-200 hover:border-blue-500 hover:shadow-xl transition-all duration-300 group'
                                 >
-                                    <div className='text-5xl mb-4'>
-                                        {way.icon}
-                                    </div>
                                     <h3 className='text-2xl font-bold text-gray-900 mb-3'>
                                         {way.title}
                                     </h3>
@@ -260,7 +257,7 @@ export default function GetInvolvedPage() {
             </section>
 
             {/* Volunteer Opportunities */}
-            <section className='bg-white py-16'>
+            <section className='bg-gray-100 py-16'>
                 <div className='container mx-auto px-4'>
                     <div className='max-w-5xl mx-auto'>
                         <h2 className='text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4'>
@@ -272,9 +269,9 @@ export default function GetInvolvedPage() {
                         </p>
 
                         <div className='grid md:grid-cols-2 gap-6 mb-12'>
-                            <div className='bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-2 border-green-200'>
+                            <div className='bg-white rounded-xl p-6 border border-gray-200 hover:border-blue-500 hover:shadow-xl transition-all duration-300'>
                                 <h3 className='text-xl font-bold text-gray-900 mb-3'>
-                                    📝 Curriculum Review
+                                    Curriculum Review
                                 </h3>
                                 <p className='text-gray-700 mb-2'>
                                     Trade professionals review course content
@@ -285,9 +282,9 @@ export default function GetInvolvedPage() {
                                 </p>
                             </div>
 
-                            <div className='bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-200'>
+                            <div className='bg-white rounded-xl p-6 border border-gray-200 hover:border-blue-500 hover:shadow-xl transition-all duration-300'>
                                 <h3 className='text-xl font-bold text-gray-900 mb-3'>
-                                    🔍 Grant Research
+                                    Grant Research
                                 </h3>
                                 <p className='text-gray-700 mb-2'>
                                     Research funding opportunities and summarize
@@ -298,9 +295,9 @@ export default function GetInvolvedPage() {
                                 </p>
                             </div>
 
-                            <div className='bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 border-2 border-purple-200'>
+                            <div className='bg-white rounded-xl p-6 border border-gray-200 hover:border-blue-500 hover:shadow-xl transition-all duration-300'>
                                 <h3 className='text-xl font-bold text-gray-900 mb-3'>
-                                    💬 Communications Support
+                                    Communications Support
                                 </h3>
                                 <p className='text-gray-700 mb-2'>
                                     Writing, design, or social media assistance
@@ -310,9 +307,9 @@ export default function GetInvolvedPage() {
                                 </p>
                             </div>
 
-                            <div className='bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-6 border-2 border-amber-200'>
+                            <div className='bg-white rounded-xl p-6 border border-gray-200 hover:border-blue-500 hover:shadow-xl transition-all duration-300'>
                                 <h3 className='text-xl font-bold text-gray-900 mb-3'>
-                                    🎓 Student Interns
+                                    Student Interns
                                 </h3>
                                 <p className='text-gray-700 mb-2'>
                                     Semester-long projects in marketing, program
@@ -324,14 +321,13 @@ export default function GetInvolvedPage() {
                             </div>
                         </div>
 
-                        <div className='bg-blue-50 rounded-xl p-8 border-2 border-blue-200 text-center'>
+                        <div className='bg-blue-50 rounded-xl p-8 border border-blue-200 text-center'>
                             <h3 className='text-2xl font-bold text-gray-900 mb-4'>
                                 How to Get Started
                             </h3>
                             <div className='grid md:grid-cols-4 gap-6 mb-6'>
                                 <div>
-                                    <div className='text-4xl mb-2'>📝</div>
-                                    <h4 className='font-bold text-gray-900 mb-1'>
+                                    <h4 className='font-bold text-gray-900 mb-1 text-lg'>
                                         Apply
                                     </h4>
                                     <p className='text-sm text-gray-600'>
@@ -340,8 +336,7 @@ export default function GetInvolvedPage() {
                                     </p>
                                 </div>
                                 <div>
-                                    <div className='text-4xl mb-2'>🤝</div>
-                                    <h4 className='font-bold text-gray-900 mb-1'>
+                                    <h4 className='font-bold text-gray-900 mb-1 text-lg'>
                                         Match
                                     </h4>
                                     <p className='text-sm text-gray-600'>
@@ -349,8 +344,7 @@ export default function GetInvolvedPage() {
                                     </p>
                                 </div>
                                 <div>
-                                    <div className='text-4xl mb-2'>📚</div>
-                                    <h4 className='font-bold text-gray-900 mb-1'>
+                                    <h4 className='font-bold text-gray-900 mb-1 text-lg'>
                                         Onboard
                                     </h4>
                                     <p className='text-sm text-gray-600'>
@@ -423,7 +417,7 @@ export default function GetInvolvedPage() {
                         Dallas, TX 75381
                     </p>
                     <p className='text-xs text-gray-400 mt-4'>
-                        © 2026 CMTech. Real Skills for the Real World. 🎯
+                        © 2026 CMTech. Real Skills for the Real World.
                     </p>
                 </div>
             </footer>

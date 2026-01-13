@@ -28,50 +28,51 @@ export default function DonatePage() {
         {
             amount: 25,
             impact: 'Supplies one learner with course workbook and materials',
-            icon: '📚',
+            icon: '',
         },
         {
             amount: 50,
             impact: "Covers one learner's full course enrollment",
-            icon: '🎓',
+            icon: '',
         },
         {
             amount: 150,
             impact: 'Trains one peer leader to facilitate a Charter',
-            icon: '👥',
+            icon: '',
         },
         {
             amount: 500,
             impact: 'Launches a new Charter at a facility',
-            icon: '🚀',
+            icon: '',
         },
         {
             amount: 1000,
             impact: 'Funds curriculum development for one new course',
-            icon: '📖',
+            icon: '',
         },
         {
             amount: 5000,
             impact: 'Sponsors a facility partnership for one year',
-            icon: '🏛️',
+            icon: '',
         },
     ];
 
     return (
-        <div className='min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50'>
+        <div className='min-h-screen bg-white'>
             <Navigation currentPage='give' />
 
             {/* Hero Section */}
-            <section className='container mx-auto px-4 py-16 md:py-24'>
+            <section className='relative overflow-hidden bg-gradient-to-br from-slate-700 via-blue-700 to-slate-600 text-white py-20 md:py-32'>
+                <div className='container mx-auto px-4'>
                 <div className='max-w-4xl mx-auto text-center'>
-                    <div className='inline-block bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold mb-6'>
+                    <div className='inline-block bg-green-400/20 text-green-200 px-4 py-2 rounded-full text-sm font-semibold mb-6'>
                         Make an Impact Today
                     </div>
-                    <h1 className='text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-green-600 via-green-700 to-green-800 bg-clip-text text-transparent leading-tight'>
+                    <h1 className='text-5xl md:text-6xl font-bold mb-6 leading-tight'>
                         Fund a Future, Uplift Communities
                     </h1>
-                    <p className='text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed'>
-                        <strong className='text-green-700'>
+                    <p className='text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed'>
+                        <strong className='text-green-200'>
                             $50 covers one learner's complete course enrollment.
                         </strong>
                     </p>
@@ -87,10 +88,11 @@ export default function DonatePage() {
                         </p>
                     </div>
                 </div>
+                </div>
             </section>
 
             {/* Gift Ladder */}
-            <section className='bg-white py-16'>
+            <section className='bg-gray-100 py-16'>
                 <div className='container mx-auto px-4'>
                     <div className='max-w-5xl mx-auto'>
                         <h2 className='text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4'>
@@ -105,22 +107,17 @@ export default function DonatePage() {
                             {giftLadder.map((gift) => (
                                 <div
                                     key={gift.amount}
-                                    className='bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-2 border-green-200 hover:border-green-400 hover:shadow-xl transition-all duration-300 cursor-pointer group'
+                                    className='bg-white rounded-xl p-6 border border-gray-200 hover:border-blue-500 hover:shadow-xl transition-all duration-300 cursor-pointer group'
                                 >
-                                    <div className='flex items-start justify-between mb-4'>
-                                        <div className='text-4xl'>
-                                            {gift.icon}
-                                        </div>
-                                        <div className='text-right'>
-                                            <div className='text-3xl font-bold text-green-700'>
-                                                ${gift.amount.toLocaleString()}
-                                            </div>
+                                    <div className='flex items-center justify-between mb-4'>
+                                        <div className='text-3xl font-bold text-blue-600'>
+                                            ${gift.amount.toLocaleString()}
                                         </div>
                                     </div>
-                                    <p className='text-gray-700 font-medium leading-relaxed'>
+                                    <p className='text-gray-700 font-medium leading-relaxed mb-4'>
                                         {gift.impact}
                                     </p>
-                                    <button className='mt-4 w-full bg-green-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-green-700 transition-colors group-hover:scale-105 duration-300'>
+                                    <button className='w-full bg-blue-600 text-white px-4 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors'>
                                         Give ${gift.amount}
                                     </button>
                                 </div>
@@ -148,24 +145,16 @@ export default function DonatePage() {
             <section className='py-16 bg-gradient-to-br from-slate-50 to-blue-50'>
                 <div className='container mx-auto px-4'>
                     <div className='max-w-4xl mx-auto'>
-                        <div className='bg-white rounded-2xl p-8 shadow-xl border border-gray-200'>
-                            <div className='flex items-start gap-4 mb-6'>
-                                <div className='text-5xl'>💬</div>
-                                <div>
-                                    <p className='text-xl text-gray-700 italic leading-relaxed mb-4'>
-                                        "I came in without a GED and I'm leaving
-                                        with an electrical certification.
-                                        Somebody believed in me enough to fund
-                                        this. I won't waste it."
-                                    </p>
-                                    <div className='text-sm text-gray-600 font-medium'>
-                                        — Devon R., Electrical Graduate
-                                        <br />
-                                        <span className='text-xs'>
-                                            Ohio, 2024
-                                        </span>
-                                    </div>
-                                </div>
+                        <div className='bg-white rounded-xl p-8 shadow-lg border border-gray-200'>
+                            <p className='text-xl text-gray-700 italic leading-relaxed mb-4'>
+                                "I came in without a GED and I'm leaving with an
+                                electrical certification. Somebody believed in
+                                me enough to fund this. I won't waste it."
+                            </p>
+                            <div className='text-sm text-gray-600 font-medium'>
+                                — Devon R., Electrical Graduate
+                                <br />
+                                <span className='text-xs'>Ohio, 2024</span>
                             </div>
                         </div>
                     </div>
@@ -173,7 +162,7 @@ export default function DonatePage() {
             </section>
 
             {/* Monthly Giving */}
-            <section className='bg-white py-16'>
+            <section className='bg-gray-50 py-16'>
                 <div className='container mx-auto px-4'>
                     <div className='max-w-4xl mx-auto text-center'>
                         <h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-6'>
@@ -256,9 +245,8 @@ export default function DonatePage() {
                         <div className='grid md:grid-cols-3 gap-6'>
                             <Link
                                 href='/give/wishlist'
-                                className='bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 border-2 border-purple-200 hover:border-purple-400 hover:shadow-xl transition-all duration-300 text-center'
+                                className='bg-white rounded-xl p-6 border border-gray-200 hover:border-blue-500 hover:shadow-xl transition-all duration-300 text-center'
                             >
-                                <div className='text-5xl mb-4'>📦</div>
                                 <h3 className='text-xl font-bold text-gray-900 mb-3'>
                                     Shop Our Wishlist
                                 </h3>
@@ -270,9 +258,8 @@ export default function DonatePage() {
 
                             <Link
                                 href='/give/charter-sponsor'
-                                className='bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-200 hover:border-blue-400 hover:shadow-xl transition-all duration-300 text-center'
+                                className='bg-white rounded-xl p-6 border border-gray-200 hover:border-blue-500 hover:shadow-xl transition-all duration-300 text-center'
                             >
-                                <div className='text-5xl mb-4'>🤝</div>
                                 <h3 className='text-xl font-bold text-gray-900 mb-3'>
                                     Sponsor a Charter
                                 </h3>
@@ -284,9 +271,8 @@ export default function DonatePage() {
 
                             <Link
                                 href='/give/volunteer'
-                                className='bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-2 border-green-200 hover:border-green-400 hover:shadow-xl transition-all duration-300 text-center'
+                                className='bg-white rounded-xl p-6 border border-gray-200 hover:border-blue-500 hover:shadow-xl transition-all duration-300 text-center'
                             >
-                                <div className='text-5xl mb-4'>⏰</div>
                                 <h3 className='text-xl font-bold text-gray-900 mb-3'>
                                     Volunteer Your Skills
                                 </h3>
@@ -301,7 +287,7 @@ export default function DonatePage() {
             </section>
 
             {/* CTA Section */}
-            <section className='bg-gradient-to-r from-green-600 to-green-700 text-white py-16'>
+            <section className='bg-gradient-to-br from-slate-700 to-blue-700 text-white py-16'>
                 <div className='container mx-auto px-4 text-center'>
                     <h2 className='text-3xl md:text-4xl font-bold mb-6'>
                         Questions About Giving?
@@ -312,7 +298,7 @@ export default function DonatePage() {
                     </p>
                     <Link
                         href='/contact'
-                        className='inline-block bg-white text-green-700 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300'
+                        className='inline-block bg-white text-blue-700 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300'
                     >
                         Contact Us
                     </Link>
@@ -332,7 +318,7 @@ export default function DonatePage() {
                         Dallas, TX 75381
                     </p>
                     <p className='text-xs text-gray-400 mt-4'>
-                        © 2026 CMTech. Real Skills for the Real World. 🎯
+                        © 2026 CMTech. Real Skills for the Real World.
                     </p>
                 </div>
             </footer>

@@ -304,7 +304,7 @@ export default function PrisonStaffContactPage() {
                         Dallas, TX 75381
                     </p>
                     <p className='text-xs text-gray-400 mt-4'>
-                        © 2026 CMTech. Real Skills for the Real World. 🎯
+                        © 2026 CMTech. Real Skills for the Real World.
                     </p>
                 </div>
             </footer>
