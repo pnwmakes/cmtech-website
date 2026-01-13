@@ -24,10 +24,10 @@ export const metadata: Metadata = {
         siteName: 'CMTech',
         images: [
             {
-                url: '/logo.png',
-                width: 460,
-                height: 207,
-                alt: 'CMTech Logo',
+                url: '/cmtech-logo.png',
+                width: 768,
+                height: 768,
+                alt: 'CMTech Logo - Learning that works',
             },
         ],
         locale: 'en_US',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         title: 'CMTech - Real Skills for Real Careers',
         description:
             'Free skilled trades education for incarcerated learners. 210,000+ served nationwide.',
-        images: ['/logo.png'],
+        images: ['/cmtech-logo.png'],
     },
 };
 

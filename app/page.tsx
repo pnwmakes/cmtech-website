@@ -37,6 +37,18 @@ export default function Home() {
 
             {/* Hero Section */}
             <main className='container mx-auto px-4 py-16'>
+                {/* Logo Hero */}
+                <div className='flex justify-center mb-12 animate-fadeIn'>
+                    <Image
+                        src='/cmtech-logo.png'
+                        alt='CMTech - Learning that works'
+                        width={300}
+                        height={300}
+                        className='w-64 h-64 md:w-80 md:h-80'
+                        priority
+                    />
+                </div>
+
                 <div
                     className={`max-w-5xl mx-auto text-center transition-all duration-1000 ${
                         mounted

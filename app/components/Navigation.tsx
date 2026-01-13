@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 interface NavigationProps {
@@ -15,12 +16,19 @@ export default function Navigation({ currentPage }: NavigationProps) {
             <nav className='container mx-auto px-4 py-4'>
                 <div className='flex items-center justify-between'>
                     {/* Logo */}
-                    <Link href='/' className='flex items-center gap-4'>
+                    <Link href='/' className='flex items-center gap-3'>
+                        <Image
+                            src='/cmtech-logo.png'
+                            alt='CMTech Logo'
+                            width={50}
+                            height={50}
+                            className='w-10 h-10 md:w-12 md:h-12'
+                        />
                         <div className='flex flex-col'>
-                            <span className='text-2xl md:text-3xl font-bold text-gray-900'>
+                            <span className='text-lg md:text-xl font-bold text-gray-900'>
                                 CMTech
                             </span>
-                            <span className='text-xs md:text-sm text-gray-600 leading-tight'>
+                            <span className='text-[10px] md:text-xs text-gray-600 leading-tight hidden sm:block'>
                                 The Cade Moore Polytechnic Institute
                             </span>
                         </div>
