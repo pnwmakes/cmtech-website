@@ -6,7 +6,7 @@ import Navigation from '../../components/Navigation';
 export const metadata: Metadata = {
     title: 'Our Team & Board | CMTech Leadership',
     description:
-        'Meet the justice-impacted leaders, staff, and board members driving CMTech\'s mission to provide free career education to 210,000+ incarcerated learners.',
+        "Meet the justice-impacted leaders, staff, and board members driving CMTech's mission to provide free career education to 210,000+ incarcerated learners.",
     openGraph: {
         title: 'CMTech Leadership - Team & Board of Directors',
         description:
@@ -21,7 +21,7 @@ export default function TeamPage() {
         {
             name: 'Team Member Name',
             role: 'Founder & Executive Director',
-            bio: 'Brief bio highlighting their background, expertise, and connection to the mission. Include their journey and why they\'re passionate about this work.',
+            bio: "Brief bio highlighting their background, expertise, and connection to the mission. Include their journey and why they're passionate about this work.",
             image: '/team/placeholder.jpg', // Replace with actual image
         },
         {
@@ -112,7 +112,7 @@ export default function TeamPage() {
                                             {member.name.charAt(0)}
                                         </span>
                                     </div>
-                                    
+
                                     <div className='text-center'>
                                         <h3 className='text-xl font-bold text-gray-900 mb-2'>
                                             {member.name}
@@ -157,7 +157,7 @@ export default function TeamPage() {
                                                 {member.name.charAt(0)}
                                             </span>
                                         </div>
-                                        
+
                                         <div className='flex-1'>
                                             <h3 className='text-lg font-bold text-gray-900 mb-1'>
                                                 {member.name}

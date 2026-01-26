@@ -88,7 +88,7 @@ export default function FamilyFriendsContactPage() {
                                     We Can Help You Connect
                                 </h3>
                                 <p className='text-gray-700'>
-                                    Fill out the form and we'll help you connect
+                                    Fill out the form and we will help you connect
                                     with the right people at the facility, or
                                     provide information your loved one can use
                                     to advocate for CMTech programs.
@@ -282,7 +282,7 @@ export default function FamilyFriendsContactPage() {
                                 <p className='text-gray-700'>
                                     Ask your loved one to check their Edovo
                                     tablet for CMTech courses. If they don't see
-                                    our courses, fill out this form and we'll
+                                    our courses, fill out this form and we will
                                     help connect you with facility staff.
                                 </p>
                             </div>
@@ -305,7 +305,7 @@ export default function FamilyFriendsContactPage() {
                                 <p className='text-gray-700'>
                                     We also offer peer-led CMTech Charters —
                                     in-person learning circles. Contact us and
-                                    we'll explore options for bringing CMTech to
+                                    we will explore options for bringing CMTech to
                                     the facility.
                                 </p>
                             </div>

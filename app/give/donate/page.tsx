@@ -64,30 +64,31 @@ export default function DonatePage() {
             {/* Hero Section */}
             <section className='relative overflow-hidden bg-gradient-to-br from-slate-700 via-blue-700 to-slate-600 text-white py-20 md:py-32'>
                 <div className='container mx-auto px-4'>
-                <div className='max-w-4xl mx-auto text-center'>
-                    <div className='inline-block bg-green-400/20 text-green-200 px-4 py-2 rounded-full text-sm font-semibold mb-6'>
-                        Make an Impact Today
-                    </div>
-                    <h1 className='text-5xl md:text-6xl font-bold mb-6 leading-tight'>
-                        Fund a Future, Uplift Communities
-                    </h1>
-                    <p className='text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed'>
-                        <strong className='text-green-200'>
-                            $50 covers one learner's complete course enrollment.
-                        </strong>
-                    </p>
-
-                    <div className='bg-white rounded-2xl p-6 shadow-lg border border-gray-200 max-w-3xl mx-auto'>
-                        <p className='text-gray-700 text-lg leading-relaxed'>
-                            Your gift directly funds skilled trades education
-                            for incarcerated learners.{' '}
-                            <strong className='text-gray-900'>
-                                No overhead bloat or executive salaries.
-                            </strong>{' '}
-                            Just real courses leading to real careers.
+                    <div className='max-w-4xl mx-auto text-center'>
+                        <div className='inline-block bg-green-400/20 text-green-200 px-4 py-2 rounded-full text-sm font-semibold mb-6'>
+                            Make an Impact Today
+                        </div>
+                        <h1 className='text-5xl md:text-6xl font-bold mb-6 leading-tight'>
+                            Fund a Future, Uplift Communities
+                        </h1>
+                        <p className='text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed'>
+                            <strong className='text-green-200'>
+                                $50 covers one learner's complete course
+                                enrollment.
+                            </strong>
                         </p>
+
+                        <div className='bg-white rounded-2xl p-6 shadow-lg border border-gray-200 max-w-3xl mx-auto'>
+                            <p className='text-gray-700 text-lg leading-relaxed'>
+                                Your gift directly funds skilled trades
+                                education for incarcerated learners.{' '}
+                                <strong className='text-gray-900'>
+                                    No overhead bloat or executive salaries.
+                                </strong>{' '}
+                                Just real courses leading to real careers.
+                            </p>
+                        </div>
                     </div>
-                </div>
                 </div>
             </section>
 

@@ -116,43 +116,43 @@ export default function CoursesPage() {
             {/* Hero Section */}
             <section className='relative overflow-hidden bg-gradient-to-br from-slate-700 via-blue-700 to-slate-600 text-white py-20 md:py-32'>
                 <div className='container mx-auto px-4'>
-                <div className='max-w-4xl mx-auto text-center'>
-                    <div className='inline-block bg-blue-400/20 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6'>
-                        50+ Free Courses
-                    </div>
-                    <h1 className='text-5xl md:text-6xl font-bold mb-6 leading-tight'>
-                        Career-Building Education + Leadership Skills
-                    </h1>
-                    <p className='text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed'>
-                        From HVAC to AI, carpentry to financial planning. CMTech
-                        is learning you can take to work.{' '}
-                        <strong className='text-blue-200'>
-                            100% tuition-free, thanks to support from people
-                            like you.
-                        </strong>
-                    </p>
-                    <div className='mb-8'>
-                        <Link
-                            href='/give/donate'
-                            className='inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:shadow-xl'
-                        >
-                            Support Free Education
-                        </Link>
-                    </div>
-
-                    <div className='bg-white rounded-2xl p-6 shadow-lg border border-gray-200 max-w-3xl mx-auto'>
-                        <p className='text-gray-700 text-lg leading-relaxed'>
-                            CMTech courses are designed specifically for
-                            incarcerated learners.{' '}
-                            <strong className='text-blue-700'>
-                                Narrative-driven instruction
-                            </strong>{' '}
-                            connects technical concepts to real job scenarios.
-                            Every course leads somewhere—toward a credential, a
-                            career path, and employment.
+                    <div className='max-w-4xl mx-auto text-center'>
+                        <div className='inline-block bg-blue-400/20 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6'>
+                            50+ Free Courses
+                        </div>
+                        <h1 className='text-5xl md:text-6xl font-bold mb-6 leading-tight'>
+                            Career-Building Education + Leadership Skills
+                        </h1>
+                        <p className='text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed'>
+                            From HVAC to AI, carpentry to financial planning.
+                            CMTech is learning you can take to work.{' '}
+                            <strong className='text-blue-200'>
+                                100% tuition-free, thanks to support from people
+                                like you.
+                            </strong>
                         </p>
+                        <div className='mb-8'>
+                            <Link
+                                href='/give/donate'
+                                className='inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:shadow-xl'
+                            >
+                                Support Free Education
+                            </Link>
+                        </div>
+
+                        <div className='bg-white rounded-2xl p-6 shadow-lg border border-gray-200 max-w-3xl mx-auto'>
+                            <p className='text-gray-700 text-lg leading-relaxed'>
+                                CMTech courses are designed specifically for
+                                incarcerated learners.{' '}
+                                <strong className='text-blue-700'>
+                                    Narrative-driven instruction
+                                </strong>{' '}
+                                connects technical concepts to real job
+                                scenarios. Every course leads somewhere—toward a
+                                credential, a career path, and employment.
+                            </p>
+                        </div>
                     </div>
-                </div>
                 </div>
             </section>
 
