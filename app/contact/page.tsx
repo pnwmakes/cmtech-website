@@ -53,7 +53,7 @@ export default function ContactPage() {
                 {/* Contact Options */}
                 <div className='grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16'>
                     <Link
-                        href='/contact/prison-staff'
+                        href='/contact/facility-partners'
                         className='bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:border-blue-500 hover:shadow-xl transition-all duration-300 text-center group'
                     >
                         <div className='w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4'>
@@ -72,7 +72,7 @@ export default function ContactPage() {
                             </svg>
                         </div>
                         <h2 className='text-xl font-bold text-gray-900 mb-2'>
-                            Prison Staff & Administrators
+                            Facility Partners & Educators
                         </h2>
                         <p className='text-gray-600 mb-3'>
                             Bring CMTech to your facility

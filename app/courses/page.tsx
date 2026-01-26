@@ -499,10 +499,10 @@ export default function CoursesPage() {
                     </p>
                     <div className='flex flex-col sm:flex-row gap-4 justify-center'>
                         <Link
-                            href='/contact/prison-staff'
+                            href='/contact/facility-partners'
                             className='bg-white text-blue-700 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2'
                         >
-                            Prison Staff
+                            Facility Partners
                         </Link>
                         <Link
                             href='/contact/family-friends'
